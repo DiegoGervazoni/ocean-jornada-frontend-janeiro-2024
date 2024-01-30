@@ -3,8 +3,8 @@ function Card(props) {
   // console.log(props);
 
   const item = props.item;
-
   //console.log(item);
+
 
   return (
     <>
@@ -12,10 +12,10 @@ function Card(props) {
         <div className="card">
           <h2 className="name">{item.name}</h2>
           <div className="button-group">
-            <button className="character">Status: Vivo</button>
-            <button className="character">Espécie: Humana</button>
+            <button className="character">{item.status}</button>
+            <button className="character">{item.species}</button>
           </div>
-          <button className="character">Origem: Terra C-137</button>
+          <button className="character">{item.origin}</button>
           <img
             src={item.image}
             alt="Imagem Rick Sanchez"
