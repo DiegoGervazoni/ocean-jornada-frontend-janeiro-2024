@@ -1,3 +1,6 @@
+#root {
+  width: 100%;
+}
 
 .container {
   margin-top: 2rem;
@@ -7,6 +10,14 @@
   box-shadow: 4px 6px 8px 0 rgba(229, 226, 226, 0.986),
     6px 10px 20px 0 rgba(227, 223, 223, 0.97);
   cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 1rem;
 }
 
 .card {
