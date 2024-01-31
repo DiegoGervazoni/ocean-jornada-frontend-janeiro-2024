@@ -11,10 +11,10 @@ function Card(props) {
         <div className="card">
           <h2 className="name">{item.name}</h2>
           <div className="button-group">
-            <button className="character">{item.status}</button>
-            <button className="character">{item.species}</button>
+            <button className="character">Status: Vivo</button>
+            <button className="character">Espécie: Humana</button>
           </div>
-          <button className="character">{item.origin}</button>
+          <button className="character">Origem: Terra C-137</button>
           <img
             src={item.image}
             className="image"
