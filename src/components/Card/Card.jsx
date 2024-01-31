@@ -5,7 +5,6 @@ function Card(props) {
   const item = props.item;
   //console.log(item);
 
-
   return (
     <>
       <div className="container">
@@ -18,7 +17,6 @@ function Card(props) {
           <button className="character">{item.origin}</button>
           <img
             src={item.image}
-            alt="Imagem Rick Sanchez"
             className="image"
           />
         </div>
