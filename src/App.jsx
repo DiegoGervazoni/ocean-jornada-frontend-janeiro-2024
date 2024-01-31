@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card/Card.jsx";
 
@@ -64,8 +64,11 @@ function App() {
     setItens(results)
   }
 
-  carregarDadosApi()
-
+  useEffect(function (){ // useEffect é um hook do React que executa uma função quando o componente é montado
+    // Carregar os dados da API
+    carregarDadosApi()
+  }, [])
+  
   return (
     <>
       <div className="cards">
